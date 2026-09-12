@@ -113,3 +113,31 @@ const WORD_DB = {
 1. ❌ **嚴禁繁中翻譯漏句或合併**：翻譯必須與英文句子 1:1 精準對應。
 2. ❌ **嚴禁單字級別誤標**：基礎字（如 still, poor, animal）嚴禁誤歸入 Level 5/6。
 3. ❌ **嚴禁使用外部繁重框架**：全部使用原生 Vanilla HTML5/CSS3/JavaScript，單一檔案即刻運行。
+
+
+---
+
+## 🛡️ 研習現場自動防呆與環境相容機制 (Workshop Foolproof & Pre-Flight Check)
+
+為了確保在研習工作坊、教師社群共備現場，**每一位老師（無論使用 Windows / Mac / 公用電腦）都能 100% 成功編譯與運行**，AI Agent 必須遵循以下防呆標準作業程序：
+
+### 1. 自動環境前置檢測 (Automated Pre-Flight Check)
+在執行任何產出任務前，AI 必須主動檢查執行環境。若缺少必要套件，**必須主動提供「一鍵複製貼上」的安裝指令**，嚴禁丟出艱深報錯代碼讓學員慌張：
+
+```bash
+# 研習學員必備 Python 核心工具包（一鍵全裝指令）：
+pip install edge-tts openpyxl beautifulsoup4 python-docx reportlab requests
+```
+
+### 2. 必要套件用途對照表：
+* 🔊 `edge-tts`：微軟 Ava / Jenny 美式真人神經網路語音合成（產出課文單句與全文 MP3 音檔）。
+* 📊 `openpyxl`：自動生成 Kahoot! 官方標準 Excel 試算表（`.xlsx`）一秒匯入題庫。
+* 🌐 `beautifulsoup4`：HTML 網頁解析與動態標籤處理。
+* 📝 `python-docx`：Word 講義、教案與學習單讀寫排版。
+* 📄 `reportlab`：雙面 A4 雜誌風閱讀學習單與段考卷 PDF 繪製與匯出。
+
+### 3. 零門檻優雅降級模式 (Graceful Fallback)
+若學員受限於學校電腦權限無法安裝 Python 套件時，AI 必須自動啟動**「免安裝純前端降級模式」**：
+- 語音播放：自動採用瀏覽器原生免安裝的 **Web Speech API (TTS)**。
+- 題庫匯出：自動產出免依賴 Python 的 **純文字 CSV (Quizizz / Blooket)** 格式。
+- 簡報運作：維持 **100% 純原生 Vanilla HTML5/CSS3/JS**，點開瀏覽器即刻教學！
