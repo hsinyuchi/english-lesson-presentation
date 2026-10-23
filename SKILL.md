@@ -1,5 +1,5 @@
 ---
-name: english-lesson-presentation
+name: hsinyuchi-lesson-presentation
 description: Use when creating an interactive HTML5 classroom presentation from an English passage or lesson text, featuring sentence-by-sentence slides, CEEC 108 7000-word vocabulary highlighting, dark/light mode, drawing canvas, and reading comprehension quizzes.
 ---
 
@@ -141,3 +141,37 @@ pip install edge-tts openpyxl beautifulsoup4 python-docx reportlab requests
 - 語音播放：自動採用瀏覽器原生免安裝的 **Web Speech API (TTS)**。
 - 題庫匯出：自動產出免依賴 Python 的 **純文字 CSV (Quizizz / Blooket)** 格式。
 - 簡報運作：維持 **100% 純原生 Vanilla HTML5/CSS3/JS**，點開瀏覽器即刻教學！
+
+---
+
+## 🔒 跨 Agent 執行防漂移鐵律 (Cross-Agent Anti-Drift Protocol)
+
+> **⚡ 適用環境：Google Antigravity、OpenAI Codex CLI、Claude Code、Cursor 等全平台 Agent**
+
+任何 AI Agent 在執行本技能時，**嚴禁依賴各平台大模型的默認輸出習慣自由發揮**，必須 100% 嚴格落實以下防漂移守則：
+
+1. **零自作主張 (Zero Creative Deviation)**：
+   - 嚴格沿用本規範定義之排版結構、區塊順序、欄位標籤與樣式。
+   - **嚴禁私自「改寫/簡化」架構**（例如擅自將特定 Flex/Grid 佈局改寫為文字列表、將精確卡片改為空泛條列、或將樣式簡化）。
+   - **嚴禁自創未經授權的新區塊**（例如擅自新增額外理論講義、發音表或未要求的長篇大論）。
+2. **骨架代碼與格式優先 (Template Boilerplate Priority)**：
+   - 若本規範提供具體代碼片段（HTML、CSS、JS、Markdown 骨架、卡片容器），必須作為不可變更之「填空基底 (Immutable Slots)」。
+   - Agent 的任務僅是將內容精準填入對應的 Slots 容器中，**禁止改動外層容器 class 名稱、DOM 結構與事件綁定機制**。
+3. **成品規格不降級 (No Spec Downgrade)**：
+   - 嚴禁因 Token 長度限制或內容龐大，而將「圖文並茂互動網頁/雙軌講義」偷工減料降級為「純文字草稿」或「簡短大綱」。
+   - 遇長文本時必須完整輸出全課內容或完整分段寫入目標檔案，**絕不省略後半段**。
+4. **雙軌/多模態完整性 (Dual-Track Completeness)**：
+   - 凡涉及「學生練習版」與「教師紅字解答版」之技能，必須兩套完整產出，答案與詳解必須扎實完整，嚴禁留白。
+   - 凡涉及固定卡片數量（如 2 張文法卡片、5 大單字卡片、10 題挖空等），**嚴格維持指定數量，不多不少**。
+5. **角色語氣與受眾鎖定 (Persona & Audience Alignment)**：
+   - 嚴格維持臺灣高中職英語科專業教師立場，第二人稱「你」或「同學們」具同理心之對話語調，**嚴格杜絕第三人稱論文式說教腔**。
+
+### 🏛️ 互動簡報 v7 旗艦規範不可更動要求 (v7 Flagship Standards)
+1. **16:9 劇院級比例鎖定**：投影片容器強制使用 `aspect-video rounded-2xl shadow-2xl`，支援全螢幕 (`F` 鍵) 與鍵盤左右導航。
+2. **v7 工具列黑科技完整性**：
+   - 雙色智慧螢光筆：必須具備 `mix-blend-mode: multiply` 特效（黃/綠）。
+   - 每頁獨立便利貼：支援雙擊新增、拖曳移動與個別刪除。
+   - 幾何圖形框選：矩形、圓形與引導箭頭。
+   - 抽籤神器與倒數計時器：純前端浮動面板。
+   - 純淨板書匯出：支援過濾課文、單純匯出板書軌跡。
+3. **嚴禁降級為靜態 PPT 草稿**：產出必須為單一獨立 HTML5 檔案，內嵌 Tailwind CSS 與原生 JavaScript。
